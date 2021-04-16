@@ -22,9 +22,9 @@
             img{
                 width: 200px;
                 height: 200px;
+                border:green 10px solid;
             }
             input{
-                padding: 25px 25px;
                 font-size: x-large;
                 color: green;
                 font-family: 'Dosis', sans-serif;
@@ -37,28 +37,51 @@
             <h1>Avocado Hortifruti</h1>
             <h3>As melhores ofertas!</h3>
         </header>
-        <section>
             <table>
                 <tr>
-                    <th>Frutas</th>
-                    <th>Preço/Kg</th>
-                    <th>Quantidade</th>
+                    <th>Setor</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
                 </tr>
                 <tr>
                     <td>
-                        <figure>
-                        <img src="abacate.jpg" alt="abacate">
-                        <figcaption>Abacate</figcaption>
-                        </figure>
+                        Frutas
                     </td>
-                    <td>R$ 7 / 950g</td>
                     <td>
+                        <figure>
+                            <img src="abacate.jpg" alt="abacate">
+                            <figcaption>Abacate</figcaption>
+                            <figcaption>R$ 7 / 950g</figcaption>
+                            </figure>
                         <form>
-                            <input type="number" id="quantity" name="quantity" min="0" max="10">
+                            <input type="number" id="quantity" name="quantity" min="100"><br>
+                            <label>gramas</label>
+                        </form>
+                    </td>
+                    <td>
+                        <figure>
+                            <img src="maçã.jpg" alt="maçã">
+                            <figcaption>Maçã</figcaption>
+                            <figcaption>R$ 1,62/180</figcaption>
+                            </figure>
+                        <form>
+                            <input type="number" id="quantity" name="quantity" min="100"><br>
+                            <label>gramas</label>
+                        </form>
+                    </td>
+                    <td>
+                        <figure>
+                            <img src="banana.jpg" alt="banana">
+                            <figcaption>Banana</figcaption>
+                            <figcaption>R$ 0,97/150g</figcaption>
+                            </figure>
+                        <form>
+                            <input type="number" id="quantity" name="quantity" min="100"><br>
+                            <label>gramas</label>
                         </form>
                     </td>
                 </tr>
             </table>
-        </section>
     </body>
 </html>
