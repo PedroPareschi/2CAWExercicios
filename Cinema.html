@@ -1,0 +1,97 @@
+
+<!-- Exercício para Aula 23/03/2021:
+
+Crie um formulário para uma sala de cinema seguindo a ideia a seguir:
+
+Página HTML com cabeçalho e rodapé (criem o nome :) )
+Uso de pelo menos 1 vídeo na página (mas precisa estar interligado com o restante da página)
+Rascunho de itens a levantar no formulário: dados do usuário, estilos de filmes que tem maior interesse, lanches que gostaria de comprar para consumir enquanto assiste o filme, sugestões/críticas
+Uso de CSS inline -->
+
+<!doctype html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTMLplex</title>
+		<style>
+			body{
+				background-color: black;
+				color: white;
+			}
+			header{
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>HTMLplex Cinemas</h1>
+			<h2>Escolha sua próxima aventura!</h2>
+			<iframe width="560" height="315"
+				src="https://www.youtube.com/embed/_nOeh677C8U" title="NomadLand trailer"; allowfullscreen>
+			</iframe>
+			<iframe width="560" height="315"
+				src="https://www.youtube.com/embed/Sz-jdlM_YGk" title="Soul trailer"; allowfullscreen>
+			</iframe>
+			<iframe width="560" height="315"
+				src="https://www.youtube.com/embed/BifA90UAQtg" title="Justice league trailer"; allowfullscreen>
+			</iframe>
+		</header>
+			<fieldset name="userinfo">
+				<legend>Informações do usuário</legend>
+				<label for="nome">Nome</label>
+				<input type="text" name="nome" size="80"><br><br>
+				<label for="email">E-mail</label>
+				<input type="text" name="email" size="80"><br><br>
+				<label for="celular">Celular</label>
+				<input type="text" name="celular" size="80"><br><br>
+				<label for="nascimento">Selecione sua data de nascimento:</label><br>
+				<input type="date" name="nascimento" >
+			</fieldset>
+			<fieldset name="movieinfo">
+				<legend>Informações de compras</legend>
+				<label for="genero">Gêneros de filme favoritos:</label><br>
+				<input type="checkbox" name="action">Ação<br>
+				<input type="checkbox" name="horror">Terror<br>
+				<input type="checkbox" name="drama" >Drama<br>
+				<input type="checkbox" name="comedy" >Comédia<br>
+				<input type="checkbox" name="animated" >Animação<br>
+				<input type="checkbox" name="romance" >Romance<br><br>
+				<label for="filme"> Selecione o filme:</label><br>
+				<select name="filme">
+					<option disabled selected value>--Selecione um filme--</option>
+					<option value="Nomadland">NomadLand</option>
+					<option value="Soul">Soul</option>
+					<option value="ligadajustica">Liga da Justiça</option>
+				</select><br><br>
+				<label for="data">Selecione a data:</label><br>
+				<input type="date" name="data"><br><br>
+				<label for="comida"> Gostaria de comprar comida em nosso estabelecimento?</label><br>
+				<form>
+					<input type="radio" name="comida" value="sim">Sim<br>
+					<input type="radio" name="comida" value="nao">Não<br>
+					<input type="radio" name="comida" value="naosei">Não sei<br>
+				</form>
+			</fieldset>
+			<fieldset name="feedback">
+				<legend>Informações para pesqusa</legend>
+				<label for="jaesteve">Já esteve no HTMLplex antes?</label><br>
+				<form>
+					<input type="radio" name="jaesteve" value="sim">Sim<br>
+					<input type="radio" name="jaesteve" value="nao">Não<br>
+				</form><br>
+				<label for="motivos">Quais motivos levaram a você escolher o HTMLplex?</label><br>
+				<input type="checkbox" name="preco">Bom preço<br>
+				<input type="checkbox" name="conforto">Conforto<br>
+				<input type="checkbox" name="comida">Qualidade da comida<br>
+				<input type="checkbox" name="atendimento">Bom atendimento<br>
+				<input type="checkbox" name="localizacao">Boa localização<br>
+				<input type="checkbox" name="qualidade de imagem ou audio">Qualidade de imagem ou áudio<br><br>
+				<label for="comentarios">Comentários/Sugestões</label><br>
+				<textarea rows="5" cols="50"> Alguns comentários gerais? Isso pode melhorar a experiência posterior</textarea>
+			</fieldset><br>
+			<button type="submit" value="submit">Confirmar</button>
+			<footer>
+				<h4>Todos os direitos reservados. Verifique a classificação indicativa dos filmes. Proíbido o consumo de bebidas alcoolicas</h4>
+			</footer>
+	</body>
+</html>

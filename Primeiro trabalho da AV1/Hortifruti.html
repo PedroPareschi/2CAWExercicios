@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Avocado Hortifruti</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background-color: rgb(161, 235, 155);
+                text-align: center;
+                color: green;
+                font-family: 'Dosis', sans-serif;
+            }
+            header{
+                font-weight: bold;
+            }
+            table{
+                font-size:x-large;
+                table-layout: fixed;
+                width: 100%;
+            }
+            img{
+                width: 200px;
+                height: 200px;
+            }
+            input{
+                padding: 25px 25px;
+                font-size: x-large;
+                color: green;
+                font-family: 'Dosis', sans-serif;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Avocado Hortifruti</h1>
+            <h3>As melhores ofertas!</h3>
+        </header>
+        <section>
+            <table>
+                <tr>
+                    <th>Frutas</th>
+                    <th>Preço/Kg</th>
+                    <th>Quantidade</th>
+                </tr>
+                <tr>
+                    <td>
+                        <figure>
+                        <img src="abacate.jpg" alt="abacate">
+                        <figcaption>Abacate</figcaption>
+                        </figure>
+                    </td>
+                    <td>R$ 7 / 950g</td>
+                    <td>
+                        <form>
+                            <input type="number" id="quantity" name="quantity" min="0" max="10">
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </body>
+</html>
