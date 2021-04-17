@@ -7,14 +7,15 @@
         <style>
             body{
                 background-color: rgb(161, 235, 155);
-                text-align: center;
                 color: green;
                 font-family: 'Dosis', sans-serif;
             }
             header{
+                text-align: center;
                 font-weight: bold;
             }
             table{
+                text-align: center;
                 font-size:x-large;
                 table-layout: fixed;
                 width: 100%;
@@ -30,8 +31,11 @@
                 font-family: 'Dosis', sans-serif;
                 text-align: center;
             }
-            footer>p{
+            .video{
                 text-align: right;
+            }
+            fieldset{
+                text-align: left;
             }
         </style>
     </head>
@@ -201,15 +205,27 @@
                     </td>
                 </tr>
             </table>
+            <fieldset>
+                <legend>Se inscreva para continuar com as compras</legend>
+                <label for="nome">Nome</label>
+				<input type="text" name="nome" size="80"><br><br>
+                <label for="sobrenome">Sobrenome</label>
+				<input type="text" name="sobrenome" size="80"><br><br>
+                <label for="email">E-mail</label>
+				<input type="email" name="email" size="80"><br><br>
+                <label for="nome">Celular</label>
+				<input type="tel" name="celular" size="80"><br><br>
+            </fieldset>
+            <button type="submit" value="submit">Prosseguir com as compras</button>
             <footer>
-                <p>Saiba os benefícios de se manter uma alimentação balanceada!</p>
-                <p>
+                <p class="video">Saiba os benefícios de se manter uma alimentação balanceada!</p>
+                <p class="video">
                     <iframe width="420" height="236" src="https://www.youtube.com/embed/lbdnd0En-aA?controls=0" title="YouTube video player" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                     </iframe>
                 </p>
                 <h5>
-                    Todos os direitos reservados
+                    Todos os direitos reservados . Quem somos . Trabalhe Conosco
                 </h5>
             </footer>
     </body>
