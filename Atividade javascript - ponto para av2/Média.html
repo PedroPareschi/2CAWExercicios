@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+            body{
+                font-size: xx-large;
+            }
+            div{
+                background-color:lavender;
+                border-radius: 5px;
+                padding: 20px;
+            }
+            input{
+                font-size: xx-large;
+                text-align: center;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            function calcularMediaFinal(){
+                var av1 = parseFloat(document.getElementById("av1").value);
+                var pesoAv1 = parseFloat(document.getElementById("pesoAv1").value);
+                var av2 = parseFloat(document.getElementById("av2").value);
+                var pesoAv2 = parseFloat(document.getElementById("pesoAv2").value);
+                var av3 = parseFloat(document.getElementById("av3").value);
+                var pesoAv3 = parseFloat(document.getElementById("pesoAv3").value);
+                var soma = (av1 * pesoAv1) + (av2 * pesoAv2) + (av3 * pesoAv3);
+                var media = soma / (pesoAv1 + pesoAv2 + pesoAv3);
+                if(media < 0 || media > 10){
+                    document.getElementById("resultado").innerHTML = "Erro: verifique os valores novamente";
+                    document.getElementById("resultado").style.color = "red";
+                }
+                else{
+                    document.getElementById("resultado").innerHTML = media;
+                    if(media >= 6){
+                        document.getElementById("resultado").style.color = "green";
+                    } else if (media < 4){
+                        document.getElementById("resultado").style.color = "red";
+                    } else {
+                        document.getElementById("resultado").style.color = "yellow";
+                    }
+                }
+            }
+        </script>
+            <div>
+                <form>
+                    <label for="av1">AV1:</label>
+                    <input type="number" name="av1" id="av1"><br><br>
+                    <label for="av2">Peso:</label>
+                    <input type="number" name="pesoAv1" id="pesoAv1"><br><br><br>
+
+                    <label for="av2">AV2:</label>
+                    <input type="number" name="av2" id="av2"><br><br>
+                    <label for="av2">Peso:</label>
+                    <input type="number" name="pesoAv2" id="pesoAv2"><br><br><br>
+
+                    <label for="av3">AV3:</label>
+                    <input type="number" name="av3" id="av3"><br><br>
+                    <label for="av2">Peso:</label>
+                    <input type="number" name="pesoAv3" id="pesoAv3"><br><br><br>
+                    <input type="button" value="Média" onClick="calcularMediaFinal()">
+                </form>
+                <p id="resultado"></p>
+            </div>
+    </body>
+</html>
