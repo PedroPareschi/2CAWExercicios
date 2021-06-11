@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JobFinder - Vagas</title>
+        <link rel="stylesheet" href="vagas.css">
+    </head>
+    <body>
+        <h1>JobFinder</h1>
+        <div class="navegacao">
+            <a class="ativo" href="#home">Vagas</a>
+            <a href="#areaDoCandidato">Área do candidato</a>
+          </div>
+        <div class="filtro">
+            <form>
+                <h3>Filtrar pesquisa</h3>
+                <fieldset>
+                    <label for="palavra-chave">Palavra-chave</label>
+                    <input type="text" name="palavra-chave"><br><br>
+                </fieldset>
+                <fieldset class="fieldsetCidade">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" name="palavra-chave"><br><br>
+                </fieldset> 
+                <fieldset>
+                    <label for="contrato">Tipo de contrato</label><br>
+                    <input type="checkbox" name="contrato" value="clt">CLT<br>
+                    <input type="checkbox" name="contrato" value="pj">PJ<br>
+                    <input type="checkbox" name="contrato" value="temporario">Temporario<br>
+                    <input type="checkbox" name="contrato" value="estagio">Estagio<br>
+                    <input type="checkbox" name="contrato" value="aprendiz">Aprendiz<br>
+                </fieldset>
+                <fieldset>
+                    <label for="contrato">Nível profissional</label><br>
+                    <input type="checkbox" name="contrato" value="trainee">Trainee<br>
+                    <input type="checkbox" name="contrato" value="junior">Junior<br>
+                    <input type="checkbox" name="contrato" value="pleno">Pleno<br>
+                    <input type="checkbox" name="contrato" value="senior">Senior<br>
+                </fieldset>
+                <fieldset>
+                    <label for="faixaSalarial">Faixa salarial</label><br>
+                    <input type="range" name="faixaSalarial" min="500" max="10000" step="1000">
+                </fieldset>
+            </form>
+        </div>
+        <div class="main">
+            <h1>Vagas</h1>
+            <div class="vaga">
+                <h2>Estágio de Desenvolvedor Back-end</h2>
+                <p class="local">Remoto</p>
+                <p>Se você for um aluno compromissado e inovador venha fazer parte do nosso time!</p>
+            </div>
+            <div class="vaga">
+                <h2>Assistente administrativo</h2>
+                <p class="local">Rio de Janeiro - RJ</p>
+                <p>Procuramos pessoas comunicativas e dedicadas!</p>
+            </div>
+            <div class="vaga">
+                <h2>Economista Senior</h2>
+                <p class="local">São Paulo - SP</p>
+                <p>Vaga para grande empresa da área de finanças</p>
+            </div>
+        </div>
+        <script src="vagas.js" async defer></script>
+    </body>
+</html>

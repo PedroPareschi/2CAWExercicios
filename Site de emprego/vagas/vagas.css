@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+body{
+    font-family: 'Noto Serif', serif;
+}
+h1{
+    color: dodgerblue;
+}
+.navegacao{
+    background-color: lightskyblue;
+    font-size: larger;
+    overflow: hidden;
+}
+.navegacao a{
+    float: left;
+    padding: 15px 15px;
+    text-decoration: none;
+    color: white;
+}
+.navegacao a:hover{
+    background-color: lightsteelblue;
+    color: black;
+}
+.ativo{
+    background-color: dodgerblue;
+}
+.filtro{
+    width: 250px; 
+    position: fixed;
+    z-index: 1; 
+    top: 200px; 
+    left: 20px;
+    background-color: lightskyblue; 
+    overflow-x: hidden; 
+}
+.filtro h3{
+    padding-left: 15px;
+}
+.main{
+    margin-left: 300px;
+}
+.vaga{
+    border: dodgerblue;
+    border-style: solid;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+.vaga h2{
+    color: dodgerblue;
+    padding-left: 10px;
+}
+.vaga p{
+    padding-left: 10px;
+}
+.local{
+    color: lightslategrey;
+    font-style: italic;
+}
