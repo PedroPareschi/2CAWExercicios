@@ -11,8 +11,66 @@
             <a>Vagas</a>
             <a class="ativo" href="#areaDoCandidato">Área do candidato</a>
           </div>
-        <div class="curriculo">
-            
+        <div class="cadastro">
+            <h2>Cadastrar currículo</h2>
+            <form>
+                <fieldset>
+                    <label for="imagem">Foto de perfil</label>
+                    <input type="file"  id="imagem" name="imagem" accept="image/*">
+                </fieldset>
+                <fieldset>
+                    <h4>Informações pessoais</h4>
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" name="nome"><br><br>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <label for="celular">Celular: </label>
+                    <input type="tel" id="celular" name="celular"><br><br>
+                </fieldset>
+                <fieldset>
+                    <h4>Informações educacionais</h4>
+                    <label for="nivelEducacional">Nível Educacional: </label>
+                    <select name="nivelEducacional" id="nivelEducacional">
+                        <option value="fundamentalIncompleto">Fundamental incompleto</option>
+                        <option value="fundamentalCompleto">Fundamental completo</option>
+                        <option value="medioIncompleto">Médio incompleto</option>
+                        <option value="medioCompleto">Médio completo</option>
+                        <option value="superiorIncompleto">Superior incompleto</option>
+                        <option value="superiorCompleto">Superior completo</option>
+                        <option value="posIncompleto">Pós graduação</option>
+                    </select><br><br>
+                    <label for="faculdade">Instituição: </label>
+                    <input type="text" id="faculdade" name="faculdade"><br><br>
+                    <label for="curso">Curso: </label>
+                    <input type="text" id="curso" name="curso"><br><br>
+                    <label for="comeco">Começo: </label>
+                    <input type="date" id="comeco" name="comeco"><br><br>
+                    <label for="fim">Fim: </label>
+                    <input type="date" id="fim" name="fim"><br><br>
+                </fieldset>
+                <fieldset>
+                    <h4>Informações profissionais</h4>
+                    <label for="resumo">Resumo: </label><br>
+                    <textarea id="resumo" name="resumo" rows="10" cols="200">Escreva aqui um pequeno resumo sobre você, seus objetivos profissionais e etc.</textarea><br><br>
+                    <label for="areaDeAtuacao">Área de atuação:</label>
+                    <input type="text" id="areaDeAtuacao" name="areaDeAtuacao"><br><br>
+                    <label for="nivel">Nível profissional: </label>
+                    <select name="nivel" id="nivel">
+                        <option value="assistente">Assistente</option>
+                        <option value="aprendiz">Aprendiz</option>
+                        <option value="estagio">Estágio</option>
+                        <option value="trainee">Trainee</option>
+                        <option value="junior">Júnior</option>
+                        <option value="pleno">Pleno</option>
+                        <option value="senior">Sênior</option>
+                    </select><br><br>
+                    <label for="experiencia">Experiência: </label><br>
+                    <textarea id="experiencia" name="experiencia" rows="10" cols="200">Escreva aqui suas experiências passadas, se tiver algum</textarea><br><br>
+                    <label for=curriculo>Importar currículo</label>
+                    <input type="file" accept=".pdf" id="curriculo" name="curriculo">
+                </fieldset>
+                <button name="enviar" id="enviar">Enviar</button>
+            </form>
         </div>
         <script src="areaDoCandidato.js" async defer></script>
     </body>
