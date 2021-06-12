@@ -23,11 +23,41 @@ h1{
 .ativo{
     background-color: dodgerblue;
 }
-.curriculo{
+.cadastro{
     border: dodgerblue;
     border-style: solid;
     margin-top: 15px;
     margin-right: 15px;
     margin-left: 15px;
     border-radius: 15px;
+    padding: 15px 15px 15px 15px;
+}
+h2{
+    color: dodgerblue;
+}
+h4{
+    color: dodgerblue;
+}
+input{
+    width: 100%;
+    height: 30px;
+    font-size: large;
+    border-radius: 4px;
+    font-family: 'Noto Serif', serif;
+}
+fieldset{
+    border: 0px;
+}
+textarea{
+    font-size: large;
+    font-family: 'Noto Serif', serif;
+}
+#enviar{
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    font-family: 'Noto Serif', serif;
+    font-size: large;
+    background-color: dodgerblue;
+    color: white;
 }
