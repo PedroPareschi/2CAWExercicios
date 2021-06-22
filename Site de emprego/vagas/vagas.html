@@ -9,37 +9,37 @@
         <h1>JobFinder</h1>
         <div class="navegacao">
             <a class="ativo" href="#home">Vagas</a>
-            <a href="#areaDoCandidato">Área do candidato</a>
+            <a href="../areaDoCandidato/areaDoCandidato.html">Área do candidato</a>
           </div>
         <div class="filtro">
             <form>
                 <h3>Filtrar pesquisa</h3>
                 <fieldset>
                     <label for="palavra-chave">Palavra-chave</label>
-                    <input type="text" name="palavra-chave"><br><br>
+                    <input type="text" id="palavra-chave" name="palavra-chave"><br><br>
                 </fieldset>
                 <fieldset class="fieldsetCidade">
                     <label for="cidade">Cidade</label>
-                    <input type="text" name="palavra-chave"><br><br>
+                    <input type="text" id="cidade" name="cidade"><br><br>
                 </fieldset> 
                 <fieldset>
-                    <label for="contrato">Tipo de contrato</label><br>
-                    <input type="checkbox" name="contrato" value="clt">CLT<br>
-                    <input type="checkbox" name="contrato" value="pj">PJ<br>
-                    <input type="checkbox" name="contrato" value="temporario">Temporario<br>
-                    <input type="checkbox" name="contrato" value="estagio">Estagio<br>
-                    <input type="checkbox" name="contrato" value="aprendiz">Aprendiz<br>
+                    <label>Tipo de contrato</label><br>
+                    <input type="checkbox" id="clt" name="contrato" value="clt">CLT<br>
+                    <input type="checkbox" id="pj" name="contrato" value="pj">PJ<br>
+                    <input type="checkbox" id="temporario" name="contrato" value="temporario">Temporario<br>
+                    <input type="checkbox" id="estagio" name="contrato" value="estagio">Estagio<br>
+                    <input type="checkbox" id="aprendiz" name="contrato" value="aprendiz">Aprendiz<br>
                 </fieldset>
                 <fieldset>
-                    <label for="contrato">Nível profissional</label><br>
-                    <input type="checkbox" name="contrato" value="trainee">Trainee<br>
-                    <input type="checkbox" name="contrato" value="junior">Junior<br>
-                    <input type="checkbox" name="contrato" value="pleno">Pleno<br>
-                    <input type="checkbox" name="contrato" value="senior">Senior<br>
+                    <label>Nível profissional</label><br>
+                    <input type="checkbox" id="trainee" name="contrato" value="trainee">Trainee<br>
+                    <input type="checkbox" id="junior" name="contrato" value="junior">Junior<br>
+                    <input type="checkbox" id="pleno" name="contrato" value="pleno">Pleno<br>
+                    <input type="checkbox" id="senior" name="contrato" value="senior">Senior<br>
                 </fieldset>
                 <fieldset>
                     <label for="faixaSalarial">Faixa salarial</label><br>
-                    <input type="range" name="faixaSalarial" min="500" max="10000" step="1000">
+                    <input type="range" id="faixaSalarial" name="faixaSalarial" min="500" max="10000" step="1000">
                 </fieldset>
             </form>
         </div>
