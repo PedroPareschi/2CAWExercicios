@@ -3,13 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>JobFinder - Vagas</title>
-        <link rel="stylesheet" href="areaDoCandidato.css">
+        <link rel="stylesheet" href="areaDoCandidatoCadastro.css">
     </head>
     <body>
         <h1>JobFinder</h1>
         <div class="navegacao">
             <a>Vagas</a>
-            <a class="ativo" href="#areaDoCandidato">Área do candidato</a>
+            <a class="ativo" href="#areaDoCandidatoCadastro">Cadastrar candidato</a>
           </div>
         <div class="cadastro">
             <h2>Cadastrar currículo</h2>
@@ -19,6 +19,10 @@
                     <input type="file"  id="imagem" name="imagem" accept="image/*">
                 </fieldset>
                 <fieldset>
+                    <h4>Vídeo de apresentação</h4>
+                    <input type="file"  id="video" name="video" accept="video/*">
+                </fieldset>
+                <fieldset>
                     <h4>Informações pessoais</h4>
                     <label for="nome">Nome: </label>
                     <input type="text" id="nome" name="nome"><br><br>
@@ -26,6 +30,29 @@
                     <input type="email" id="email" name="email"><br><br>
                     <label for="celular">Celular: </label>
                     <input type="tel" id="celular" name="celular"><br><br>
+                    <label for="dataNascimento">Data de nascimento: </label>
+                    <input type="date" id="dataNascimento" name="dataNascimento"><br><br>
+                    <label for="sexo">Sexo: </label>
+                    <select name="sexo" id="sexo">
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outro">Outro</option>
+                    </select><br><br>
+                </fieldset>
+                <fieldset>
+                    <h4>Endereço</h4>
+                    <label for="cep">CEP: </label>
+                    <input type="number" id="cep" name="cep"><br><br>
+                    <label for="rua">Rua: </label>
+                    <input type="text" id="rua" name="rua"><br><br>
+                    <label for="email">Número: </label>
+                    <input type="number" id="numero" name="numero"><br><br>
+                    <label for="celular">Complemento: </label>
+                    <input type="tel" id="complemento" name="complemento"><br><br>
+                    <label for="email">Estado: </label>
+                    <input type="text" id="estado" name="estado"><br><br>
+                    <label for="email">Cidade: </label>
+                    <input type="text" id="cidade" name="cidade"><br><br>
                 </fieldset>
                 <fieldset>
                     <h4>Informações educacionais</h4>
@@ -64,8 +91,6 @@
                         <option value="pleno">Pleno</option>
                         <option value="senior">Sênior</option>
                     </select><br><br>
-                    <label for="experiencia">Experiência: </label><br>
-                    <textarea id="experiencia" name="experiencia" rows="10" cols="150">Escreva aqui suas experiências passadas, se tiver alguma</textarea><br><br>
                 </fieldset>
                 <fieldset>
                     <h4>Importar currículo (.pdf)</h4>
@@ -76,6 +101,6 @@
                 </fieldset>
             </form>
         </div>
-        <script src="areaDoCandidato.js" async defer></script>
+        <script src="areaDoCandidatoCadastro.js" async defer></script>
     </body>
 </html>

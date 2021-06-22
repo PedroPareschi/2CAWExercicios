@@ -51,6 +51,16 @@ fieldset{
 textarea{
     font-size: large;
     font-family: 'Noto Serif', serif;
+    width: 100%;
+}
+select{
+    font-size: large;
+}
+#numero{
+    width: 50px;
+}
+#estado{
+    width: 50px;
 }
 #enviar{
     width: 100%;
