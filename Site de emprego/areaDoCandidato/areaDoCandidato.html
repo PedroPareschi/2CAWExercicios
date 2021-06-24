@@ -5,7 +5,7 @@
     <title>JobFinder - Vagas</title>
     <link rel="stylesheet" href="areaDoCandidato.css">
 </head>
-<body>
+<body onload="carregarValores()">
 <h1>JobFinder</h1>
 <div class="navegacao">
     <a href="../vagas/vagas.html">Vagas</a>
@@ -13,38 +13,53 @@
 </div>
 <div class="curriculo">
     <h2>Currículo</h2>
-            <img src="foto_de_perfil.jpg" alt="foto de perfil">
-            <h4>Vídeo de apresentação</h4>
-            <video controls>
-                <source src="video_apresentacao.mp4">
-            </video>
-            <h4>Informações pessoais</h4>
-            <p id="nome">Luan Filipe Antonio Nogueira</p>
-            <p id="email"><b>Email: </b>luanfilipeantonionogueira-83@paae.com.br</p>
-            <p id="telefone"><b>Telefone: </b>21987654321</p>
-            <p id="dataNascimento"><b>Data de nascimento: </b>26/12/2000</p>
-            <p id="sexo"><b>Sexo: </b>Masculino</p>
-            <h4>Endereço</h4>
-            <p id="cep"><b>CEP: </b>22765004</p>
-            <p id="rua"><b>Rua: </b>Avenida Tenente-Coronel Muniz de Aragão</p>
-            <p id="numero"><b>Número: </b>277</p>
-            <p id="complemento"><b>Complemento: </b>-</p>
-            <p id="cidade"><b>Cidade: </b>Rio de Janeiro</p>
-            <p id="estado"><b>Estado: </b>RJ</p>
-            <h4>Informações educacionais</h4>
-            <p id="nivelEducacional"><b>Nível de formação: </b>Superior incompleto</p>
-            <p id="instituicao"><b>Instituição: </b>FAETERJ-Rio</p>
-            <p id="curso"><b>Curso: </b>Análise e Desenvolvimento de Sistemas</p>
-            <p id="comeco"><b>Começo: </b>10/01/2020</p>
-            <p id="fim"><b>Fim: </b>10/12/2022</p>
-            <h4>Informações profissionais</h4>
-            <b>Resumo:</b>
-            <p id="resumo">Sou aluno de TI e procuro estágio. Possuo conhecimentos de Java, HTML, Javascript, CSS. Sou pró-ativo, comunicador e organizado.</p>
-            <p id="areaDeAtuacao"><b>Área de atuação: </b>Desenvolvimento de Sistemas</p>
-            <p id="nivelProfissional"><b>Nível profissional: </b>10/12/2022</p>
-             <h4>Currículo</h4>
-            <a href="Currículo_Estágio.pdf">Baixar currículo</a><br><br>
-            <button name="editar" id="editar" onclick="moverParaPaginaDeEdicao()">Editar</button>
+    <img id="fotoDePerfil" src="foto_de_perfil.jpg" alt="foto de perfil">
+    <h4>Vídeo de apresentação</h4>
+    <h4>Informações pessoais</h4>
+    <p id="nome">Luan Filipe Antonio Nogueira</p>
+    <b>Email: </b>
+    <p id="email">luanfilipeantonionogueira-83@paae.com.br</p>
+    <b>Telefone: </b>
+    <p id="telefone">21987654321</p>
+    <b>Data de nascimento: </b>
+    <p id="dataNascimento">26/12/2000</p>
+    <b>Sexo: </b>
+    <p id="sexo">Masculino</p>
+    <h4>Endereço</h4>
+    <b>CEP: </b>
+    <p id="cep">22765004</p>
+    <b>Rua: </b>
+    <p id="rua">Avenida Tenente-Coronel Muniz de Aragão</p>
+    <b>Número: </b>
+    <p id="numero">277</p>
+    <b>Complemento: </b>
+    <p id="complemento">Apt. 456</p>
+    <b>Cidade: </b>
+    <p id="cidade">Rio de Janeiro</p>
+    <b>Estado: </b>
+    <p id="estado">RJ</p>
+    <h4>Informações educacionais</h4>
+    <b>Nível de formação: </b>
+    <p id="nivelEducacional">Superior incompleto</p>
+    <b>Instituição: </b>
+    <p id="instituicao">FAETERJ-Rio</p>
+    <b>Curso: </b>
+    <p id="curso">Análise e Desenvolvimento de Sistemas</p>
+    <b>Começo: </b>
+    <p id="comeco">10/01/2020</p>
+    <b>Fim: </b>
+    <p id="fim">10/12/2022</p>
+    <h4>Informações profissionais</h4>
+    <b>Resumo:</b>
+    <p id="resumo">Sou aluno de TI e procuro estágio. Possuo conhecimentos de Java, HTML, Javascript, CSS. Sou
+        pró-ativo, comunicador e organizado.</p>
+    <b>Área de atuação: </b>
+    <p id="areaDeAtuacao">Desenvolvimento de Sistemas</p>
+    <b>Nível profissional: </b>
+    <p id="nivelProfissional">10/12/2022</p>
+    <h4>Currículo</h4>
+    <a href="Currículo_Estágio.pdf">Baixar currículo</a><br><br>
+    <button name="editar" id="editar" onclick="moverParaPaginaDeEdicao()">Editar</button>
 </div>
 <script src="areaDoCandidato.js" async defer></script>
 </body>

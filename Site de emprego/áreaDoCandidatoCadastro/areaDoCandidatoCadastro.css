@@ -71,3 +71,6 @@ select{
     background-color: dodgerblue;
     color: white;
 }
+.obrigatorio{
+    color: red;
+}
