@@ -60,12 +60,19 @@ h1{
     font-size: x-large;
     font-weight: bold;
 }
-.enviar{
+.botoes{
     padding-left: 10px;
     padding-bottom: 10px;
 }
-.enviar button{
+.enviar{
     background-color: dodgerblue;
+    border-radius: 4px;
+    font-family: 'Noto Serif', serif;
+    color: white;
+    font-size: medium;
+}
+.abrirSite{
+    background-color: grey;
     border-radius: 4px;
     font-family: 'Noto Serif', serif;
     color: white;
