@@ -39,28 +39,96 @@
                 </fieldset>
                 <fieldset>
                     <label for="faixaSalarial">Faixa salarial</label><br>
-                    <input type="range" id="faixaSalarial" name="faixaSalarial" min="500" max="10000" step="1000">
+                    <input type="range" id="faixaSalarial" name="faixaSalarial" min="500" max="10000" step="1000" onchange="mostrarValor(this.value)">
+                    <span id="valor"></span>
                 </fieldset>
             </form>
         </div>
         <div class="main">
             <h1>Vagas</h1>
-            <div class="vaga">
-                <h2>Estágio de Desenvolvedor Back-end</h2>
+            <h5>Clica no título para saber mais sobre a vaga!</h5>
+            <div id="estagioDesenvolvedor" class="vaga">
+                <a onclick="detalharVaga('estagioDesenvolvedor', 'Meio período', 'Estágio', 'Estágio','1000')">Estágio de Desenvolvedor Back-end</a>
                 <p class="local">Remoto</p>
-                <p>Se você for um aluno compromissado e inovador venha fazer parte do nosso time!</p>
+                <p class="detalhe">Se você for um aluno compromissado e inovador venha fazer parte do nosso time!</p>
+                <div class="enviar">
+                    <button onclick="enviar('estagioDesenvolvedor')">Enviar Currículo</button>
+                    <p></p>
+                </div>
             </div>
-            <div class="vaga">
-                <h2>Assistente administrativo</h2>
+            <div id="assistenteAdministrativo" class="vaga">
+                <a onclick="detalharVaga('assistenteAdministrativo', 'Integral', 'CLT', 'Assistente','1500')">Assistente administrativo</a>
                 <p class="local">Rio de Janeiro - RJ</p>
-                <p>Procuramos pessoas comunicativas e dedicadas!</p>
+                <p class="detalhe">Procuramos pessoas comunicativas e dedicadas!</p>
+                <div class="enviar">
+                    <button onclick="enviar('assistenteAdministrativo')">Enviar Currículo</button>
+                    <p></p>
+                </div>
             </div>
-            <div class="vaga">
-                <h2>Economista Senior</h2>
+            <div id="economistaSenior" class="vaga">
+                <a onclick="detalharVaga('economistaSenior', 'Integral', 'CLT', 'Senior','6000')" >Economista Senior</a>
                 <p class="local">São Paulo - SP</p>
-                <p>Vaga para grande empresa da área de finanças</p>
+                <p class="detalhe">Vaga para grande empresa da área de finanças</p>
+                <div class="enviar">
+                    <button onclick="enviar('economistaSenior')">Enviar Currículo</button>
+                    <p></p>
+                </div>
+            </div>
+            <div id="tecnicoContabilidade" class="vaga">
+                <a onclick="detalharVaga('tecnicoContabilidade', 'Integral', 'CLT', 'tecnico','2000')" >Técnico de contabilidade</a>
+                <p class="local">São Paulo - SP</p>
+                <p class="detalhe">Empresa no ramo bancário procura técnico contábil</p>
+                <div class="enviar">
+                    <button onclick="enviar('tecnicoContabilidade')">Enviar Currículo</button>
+                    <p></p>
+                </div>
+            </div>
+            <div id="programaEstagio" class="vaga">
+                <a onclick="detalharVaga('programaEstagio', 'Meio período', 'Estágio', 'Estágio','1000')">Programa de estágio 2021</a>
+                <p class="local">São Paulo - SP</p>
+                <p class="detalhe">Venha fazer parte do nosso time</p>
+                <div class="enviar">
+                    <button onclick="enviar('programaEstagio')">Enviar Currículo</button>
+                    <p></p>
+                </div>
+            </div>
+            <div id="programadorFrontEnd" class="vaga">
+                <a onclick="detalharVaga('programadorFrontEnd', 'Integral', 'CLT', 'Pleno','7000')">Programador Front-End Pleno</a>
+                <p class="local">Remoto</p>
+                <p class="detalhe">Procuramos programador dedicado e com experiência</p>
+                <div class="enviar">
+                    <button onclick="enviar('programadorFrontEnd')">Enviar Currículo</button>
+                    <p></p>
+                </div>
+            </div>
+            <div id="jovemAprendizFarmacia" class="vaga">
+                <a onclick="detalharVaga('jovemAprendizFarmacia', 'Meio período', 'Aprendiz', 'Aprendiz','900')">Jovem Aprendiz - Farmácia</a>
+                <p class="local">Rio de Janeiro - RJ</p>
+                <p class="detalhe">Venha ter sua primeira oportuniadade com nossa empresa</p>
+                <div class="enviar">
+                    <button onclick="enviar('jovemAprendizFarmacia')">Enviar Currículo</button>
+                    <p></p>
+                </div>
+            </div>
+            <div id="engenheiroAmbiental" class="vaga">
+                <a onclick="detalharVaga('engenheiroAmbiental', 'Integral', 'CLT', 'Junior','4000')">Engenheiro ambiental júnior</a>
+                <p class="local">São Paulo - SP</p>
+                <p class="detalhe">Empresa ramo alimentício procura graduados de engenharia</p>
+                <div class="enviar">
+                    <button onclick="enviar('engenheiroAmbiental')">Enviar Currículo</button>
+                    <p></p>
+                </div>
+            </div>
+            <div id="cientistaDeDados" class="vaga">
+                <a onclick="detalharVaga('cientistaDeDados', 'Integral', 'CLT', 'Pleno','7000')">Cientista de Dados</a>
+                <p class="local">São Paulo - SP</p>
+                <p class="detalhe">Empresa de mídia procura formados em estatística ou ciência da computação com conhecimentos de BigData</p>
+                <div class="enviar">
+                    <button onclick="enviar('cientistaDeDados')">Enviar Currículo</button>
+                    <p></p>
+                </div>
             </div>
         </div>
-        <script src="vagas.js" async defer></script>
+        <script src="vagas.js"></script>
     </body>
 </html>
